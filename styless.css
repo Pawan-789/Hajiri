@@ -1,0 +1,919 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    display: flex;
+    background: #f8f9fa;
+    flex-direction: column;
+    color: #333;
+    margin: 0;
+    height:100%;
+    width:100%;
+}
+.sidebar {
+    min-width: 277px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    height: 1140.65px;
+    padding-top: 10.17px;
+    
+    
+}
+.hajiri{
+    width:100px;
+    margin-bottom: 20px;
+}
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.sidebar ul li:hover, .sidebar ul .active {
+    background: #cbc9ff;
+    color: white;
+}
+.sidebar ul .other{
+    font-size: 10px;
+    color:gray;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+   
+}
+.sidebar ul .other:hover{
+    pointer-events: none;
+}
+.premium-section {
+    background: #F4F4FC;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
+}
+
+.premium-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.premium-title {
+    display: flex;
+    align-items: center;
+}
+
+.premium-title img {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+}
+
+.modify-btn {
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+}
+
+.validity {
+    font-size: 12px;
+    color: #A8A8A8;
+    margin-top: 7px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+}
+
+.user-details {
+    flex: 1;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.user-email {
+    font-size: 14px;
+    color: #A8A8A8;
+    padding-top: 6px;
+}
+
+.arrow-icon {
+    font-size: 16px;
+    color: #A8A8A8;
+}
+.alignment{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    max-width: 1200px;
+}
+.main-content {
+    flex: 1;
+    padding: 0 30px;
+    max-width: 1642px;
+    margin:0 ;
+   
+}
+.top-section {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 0; 
+}
+
+
+/*Regarding the top section */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:20px 15px;
+    margin-bottom: 10px;
+    width:1642px;
+    height:139px;
+    position: relative;
+    background: white;
+    border-color:1px solid #EDEDD5;
+    margin-top: 0;
+    
+    
+}
+.topbar-left {
+    display: flex;
+    flex-direction: column;
+}
+.topbar h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+}
+.for-space {
+    font-size: 14px;
+    color: #6B6B6B;
+    margin-bottom: 10px;
+}
+.option{
+    display:flex;
+    margin-top:25px;
+    gap:30px;
+    font-size: 14px;
+    margin-bottom: none;
+    
+}
+.option h3{
+    font-weight: 500;
+    cursor: pointer; 
+    
+    
+}
+/* Inbox Section */
+.inbox-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+/* Inbox Icon */
+.inbox-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* Inbox Text */
+.inbox-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+
+/* Profile Circle */
+.profile-circle {
+    width: 28px;
+    height: 28px;
+    background: #E89C72;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.sidebar .for-space{
+    margin-top:10px;
+    color:lightgray;
+}
+.option h3:hover{
+    color: #cbc9ff;
+    
+}
+
+/* for date and calender*/
+
+.tithi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: #F9FAFC;
+    margin-bottom:60px;
+    padding:10px;
+}
+.date-range {
+    background:#F9FAFC ;
+    padding:10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    display:flex;
+    min-width: 200px;
+    gap:15px;
+    width:440px;
+    height: 54px;
+}
+.date-range h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.date-picker {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+.date-picker button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.calendar-icon {
+    font-size: 18px;
+}
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    
+}
+/*
+    Regarding all common boxes including all main componnets
+*/
+
+
+.box{
+    padding:20px;
+    display: flex;
+    margin:20px;
+    align-items: left; 
+
+}
+
+.wallet-container, .expense-container, .client-report{
+    margin-bottom: 10px; 
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+}
+.wallet-container, .expense-container, .client-report{
+    flex:1;
+    margin-right:10px;
+}
+
+/* It is the compination of 3 componnets in same row (Wallet,categories ancd client)*/
+
+.dashboard-container {
+    display: flex;
+    justify-content: flex-start; /* Align items side by side */
+   /* align-items: flex-start;*/
+    gap: 20px;
+    /*flex-wrap: wrap;*/
+    margin-bottom: 0;
+    width:100%;
+    max-width:1642px;
+}
+
+/* Wallet container */
+
+.wallet-container {
+    width: 440px;
+    height:888px;
+    background: white;
+    color: black;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    margin-top: -40px;
+    
+}
+.wallet-details{
+    padding:10px;
+    text-align: left;
+    justify-content: left;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    
+
+}
+.wallet-card {
+    background: rgb(239, 239, 239);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width:407px;
+    width: 100%;
+    height: 206px;
+    
+    
+}
+.wallet-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #3d3c3c;
+}
+
+.wallet-subtitle {
+    font-size: 16px;
+    color: #6B6B6B;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+.wallet-balance {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1C1C1C;
+    padding-top: 10px;
+    margin-top:5px ;
+}
+
+.spending-limit {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #D6CCFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2C2C2C;
+    margin-top: 25px;
+    margin-bottom: -30px;
+    width: calc(100% - 0px);
+    height: 48px;
+    
+}
+.spending-amount{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.transaction-header {
+    font-size: 14px;
+    color: #2d2c2c;
+    margin: 40px 0 20px;
+    border-top: 1px solid #f5f0f0;
+    padding-top: 20px;
+    
+}
+.transaction-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+   
+}
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.transaction-text {
+    /*flex: 1;*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.transaction-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+.amount {
+    font-size: 14px;
+    font-weight: 600;
+    color: #242424;
+}
+.strong-dep{
+    color: #333232cf;
+    font-weight: 300;
+}
+.transaction-text .name {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(62, 62, 62);
+}
+
+.transaction-text .department {
+    font-size: 12px;
+    color: #A8A8A8;
+}
+
+/* Date */
+.date {
+    font-size: 12px;
+    color: #A8A8A8;
+}
+
+/* Button */
+.view-all-btn {
+    background: none;
+    border: 1px solid #f5f0f0;
+    color: gray;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Categories related things */
+
+.expense-container {
+    width: 570.22px;
+    height: 649px;
+    background: white;
+    color: black;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    display:flex;
+    flex-direction: column;
+}
+
+.expense-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #040404;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f5f0f0;
+    position: relative;
+}
+.expense-categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.expense-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.expense-title1 {
+    display: flex;
+    width:100%;
+    text-align: left;
+    align-items: baseline;
+    margin: 0;
+    gap: 8px;
+}
+.big-number {
+    font-size: 35px; 
+    font-weight: bold;
+    color: rgb(49, 46, 46); 
+    line-height: 1;
+}
+.expense-title-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #3d3c3c;
+    flex-grow: 1;
+
+}
+.expense-subtitle {
+    font-size: 14px;
+    color: #A8A8A8;
+    margin-top: 3px;
+    display: block;
+    width: 100%;
+}
+
+.expense-chart {
+    display: flex;
+    
+    align-items: center;
+}
+
+.expense-chart img {
+    width: 130px;
+    height: auto;
+}
+
+.expense-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.expense-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    border: 1px solid #f5f0f0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #D6D6D6;
+    gap: 10px;
+}
+.color-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    flex-shrink: 0;
+   
+}
+.expense-name {
+    flex-grow: 1;
+    text-align: left;
+    color:#040404;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.expense-amount {
+    text-align: right;
+    font-weight: bold;
+    color: #040404;
+    font-size: 14px;
+}
+
+.pink { background: #FF3B71; }
+.blue { background: #5755D9; }
+.light-blue { background: #3498DB; }
+.green { background: #2ECC71; }
+.cyan { background: #1ABC9C; }
+.teal { background: #16A085; }
+.red { background: #E74C3C; }
+.purple { background: #8E44AD; }
+.section {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+/* Expense Summary Container */
+.expense-summary-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width:100%;
+    margin-bottom: 20px;
+    gap: 10px;
+    margin-left:50px;
+    
+}
+
+/* Individual Expense Card */
+.expense-card {
+    width: 212px;
+    height: 119px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin:4px;
+    text-align: left;
+    gap:4px;
+}
+
+/* Icon */
+.expense-icon img {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding-top: 6px;
+    margin-right:10px;
+    
+}
+
+/* Title */
+.expense-title {
+    font-size: 14px;
+    font-weight: semibold;
+    color: #666;
+    margin-top: 5px;
+    text-align: left;
+    justify-content: left;
+    margin-left:40px;
+
+
+}
+
+/* Amount */
+.expense-card h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 5px 0;
+    text-align: left;
+}
+
+/* Trend Up & Down */
+.trend {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.trend.up {
+    color: #27ae60;
+}
+
+.trend.down {
+    color: #e74c3c;
+}
+
+/* Requests */
+.requests {
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+/* client report section starts here*/
+.client-report {
+    width: 545.22px;
+    height: 649px;
+    background: white; 
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+/* --- Header --- */
+.client-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: lightblack;
+    padding-bottom: 20px;
+    position: relative;
+    
+}
+.client-header::after {
+    content: "";
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 1px;
+    background: #f5f4f4;
+    position: absolute;
+    bottom: -15px;
+}
+
+.client-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+/* --- Each Client Card --- */
+.client-card {
+    background: white;
+    border: 1px solid #f5f0f0;
+    padding: 15px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 513px;
+    height:125px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.client-name{
+    flex-grow:1;
+}
+.money{
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+}
+.client-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.client-progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding-bottom: 8px;
+    position: relative;
+    
+}
+.client-progress::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #f5f4f4;
+    position: absolute;
+    bottom: 0;
+}
+/* --- Progress Bar --- */
+.progress {
+    flex-grow: 1;
+    height: 6px;
+    background:#b5b5ea;
+    border-radius: 5px;
+   /* margin-top: 10px;*/
+    position: relative;
+    max-width:60%;
+    padding-top:0;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #6E6EF3;
+    border-radius: 5px;
+    width:0;
+    transition: width 0.5s ease-in-out;
+}
+
+/* --- Percentage & This Week --- */
+.client-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.percentage {
+    /*font-weight: bold;*/
+    margin-left: none;
+    font-size: 14px;
+    color: #686767;
+    text-align: left;
+}
+
+.week {
+    color: #686767;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.spend {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #686767;
+}
+.details-link {
+    color: rgb(79, 78, 78);  
+    text-decoration: none;
+}
+/* --- View Details Link --- */
+a {
+    color: rgb(49, 47, 47);
+    text-decoration: underline;
+    margin-top: 5px;
+    display: block;
+    font-size: 14px;
+}
+.client-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.budget-allocation{
+    width:calc(450px+550px+20px);
+    height:145px;
+    display:flex;
+    margin-top:-10px;
+    color:black;
+    flex-direction: column;
+    padding: 15px;
+    background: white;
+}
+   
+.budget-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.budget-divider {
+    width: 1120px;
+    height: 1px;
+    background:rgb(249, 245, 245); 
+    margin-bottom: 10px;
+}
+
+.budget-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.budget-column {
+    width: 15%;
+    height: 60px; 
+    border-right: 1px solid rgb(249, 245, 245);
+}
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.subtitle {
+    font-size: 10px;
+    opacity: 0.7; 
+    text-align: left;
+    padding-top: 10px;
+    padding-left:5px;
+}
+.budget-column:last-child {
+    border-right: none; 
+}
