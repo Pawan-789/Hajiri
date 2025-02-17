@@ -44,6 +44,7 @@ To use the dashboard:
 
 Here are some screenshots of the dashboard:
 
-![Dashboard Screenshot](C:\Users\Ruan\Desktop\Figma_dashboard\img\ss.png) 
+![![ss](https://github.com/user-attachments/assets/16c0e90c-6363-4ffa-906c-791bae118c28)
+](https://github.com/Pawan-789/Hajiri/blob/main/img/ss.png)) 
 ![Sidebar Screenshot](C:\Users\Ruan\Desktop\Figma_dashboard\img\ss3.png) 
 ![Reports Screenshot](C:\Users\Ruan\Desktop\Figma_dashboard\img\ss2.png) 
