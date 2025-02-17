@@ -22,7 +22,7 @@ This project is a responsive dashboard design created using only HTML and CSS. T
 2. Open the `index.html` file in your web browser to view the dashboard.
 
 ```bash
-git clone https://github.com/yourusername/dashboard-design.git
+git clone https://github.com/Pawan-789/Hajiri.git
 cd dashboard-design
 open index.html
 
